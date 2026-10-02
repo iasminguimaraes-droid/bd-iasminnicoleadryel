@@ -23,8 +23,22 @@ VALUES (2, 'O Alquimista', 'Paulo Coelho', 1988);
 
 -- ex2
 
+CREATE TABLE LEITOR (
+    id INT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL
+);
+
+INSERT INTO LEITOR (id, nome) VALUES (1, 'Ana Silva');
+INSERT INTO LEITOR (id, nome) VALUES (2, 'Bruno Costa');
+INSERT INTO LEITOR (id, nome) VALUES (3, 'Carla Souza');
+
+ALTER TABLE LEITOR ADD telefone VARCHAR(20);
+
+SELECT * FROM LEITOR;
+
 
 -- ex3
+
 
 
 -- ex4
