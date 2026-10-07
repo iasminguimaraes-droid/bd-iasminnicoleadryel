@@ -39,10 +39,20 @@ SELECT * FROM LEITOR;
 
 -- ex3
 
+CREATE TABLE EMPRESTIMO (
+    id INTEGER PRIMARY KEY,
+        id_livro INTEGER NOT NULL
+    );
+
+INSERT INTO EMPRESTIMO (id_livro) VALUES (101);
+INSERT INTO EMPRESTIMO (id_livro) VALUES (102);
+
+ALTER TABLE EMPRESTIMO ADD COLUMN esqueci_tb TEXT NOT NULL DEFAULT 'não informado";
 
 
 -- ex4
 
+    
 
 -- ex5
 
